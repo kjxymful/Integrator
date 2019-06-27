@@ -1,0 +1,5 @@
+build
+.vscode
+Data
+CMake
+strict.lua

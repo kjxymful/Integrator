@@ -62,7 +62,7 @@ if __name__ == "__main__":
     output = np.zeros((1,5))
 
     #interpolate tau
-    ftau = interpolate.interp1d(time, tau, kind="linear", bounds_error=False, fill_value=(tau0[0],tau0[0]))
+    ftau = interpolate.interp1d(time, tau, kind="linear", bounds_error=False, fill_value=(tau0[0],tau0[-1]))
 
     for i in range(time.size-1):
         #get initial state
